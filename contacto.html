@@ -53,24 +53,33 @@
         <div class="about-txt">
             <h2>Envíame un mensaje</h2>
 
-            <form action="https://api.web3forms.com/submit" method="POST" style="max-width: 500px;">
+<form action="https://api.web3forms.com/submit" method="POST" style="max-width: 500px;">
 
-                <label style="color: #F3E2D4; font-weight: 600;">Nombre</label>
-                <input type="hidden" name="acces_key" value="0c289156-c9e2-415f-b62f-40e08fc38ee6"
-                    <input type="text" name="Nombre" required
-                       style="width: 100%; padding: 12px; margin: 10px 0 20px; border-radius: 8px; border: none;">
+    <!-- Clave Web3Forms -->
+    <input type="hidden" name="access_key" value="0c289156-c9e2-415f-b62f-40e08fc38ee6">
 
-                <label style="color: #F3E2D4; font-weight: 600;">Correo</label>
-                <input type="email" name="Correo" required
-                       style="width: 100%; padding: 12px; margin: 10px 0 20px; border-radius: 8px; border: none;">
+    <!-- Opcional: asunto del correo -->
+    <input type="hidden" name="subject" value="Nuevo mensaje desde tu portafolio">
 
-                <label style="color: #F3E2D4; font-weight: 600;">Mensaje</label>
-                <textarea name="Mensaje" rows="5" required
-                          style="width: 100%; padding: 12px; margin: 10px 0 20px; border-radius: 8px; border: none;"></textarea>
+    <!-- Campo oculto para identificar el sitio -->
+    <input type="hidden" name="from_name" value="Formulario NZO">
 
-                <button type="submit" class="btn-1">Enviar</button>
+    <label style="color: #F3E2D4; font-weight: 600;">Nombre</label>
+    <input type="text" name="name" required
+           style="width: 100%; padding: 12px; margin: 10px 0 20px; border-radius: 8px; border: none;">
 
-            </form>
+    <label style="color: #F3E2D4; font-weight: 600;">Correo</label>
+    <input type="email" name="email" required
+           style="width: 100%; padding: 12px; margin: 10px 0 20px; border-radius: 8px; border: none;">
+
+    <label style="color: #F3E2D4; font-weight: 600;">Mensaje</label>
+    <textarea name="message" rows="5" required
+              style="width: 100%; padding: 12px; margin: 10px 0 20px; border-radius: 8px; border: none;"></textarea>
+
+    <button type="submit" class="btn-1">Enviar</button>
+
+</form>
+
         </div>
     </section>
 
@@ -114,3 +123,4 @@ Saludos%2C%0A%5BT%C3%BA%20nombre%5D">
 
 </body>
 </html>
+
