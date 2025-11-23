@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gracias por tu mensaje</title>
+
+    <style>
+        body {
+            background: #0D0D0D;
+            color: #F3E2D4;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 60px 20px;
+
+            /* Animación suave de entrada */
+            opacity: 0;
+            animation: fadeIn 1s forwards ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+        }
+
+        .btn-volver {
+            display: inline-block;
+            background: #F3E2D4;
+            color: #0D0D0D;
+            padding: 12px 25px;
+            border-radius: 10px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.25s ease-in-out;
+        }
+
+        /
